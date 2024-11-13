@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メモ入力</title>
+</head>
+<body>
+    <h2>メモ入力</h2>
+    <p>日付: <span th:text="${noteDate}"></span></p>
+
+    <form action="/memo/save" method="post">
+        <input type="hidden" name="date" th:value="${noteDate}">
+        <label for="content">メモ内容:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">保存</button>
+    </form>
+    <a href="/calender">入力をキャンセル</a>
+</body>
+</html>

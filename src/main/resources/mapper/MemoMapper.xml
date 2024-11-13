@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.MemoMapper">
+    <insert id="insertMemo" parameterType="com.example.demo.model.Memo">
+        INSERT INTO days_memo (set_id, content, memo_date, days_date)
+        VALUES (#{setId}, #{content}, #{memoDate}, #{daysDate})
+    </insert>
+    <select id="getMemosByUserId" resultType="com.example.demo.model.Memo">
+    SELECT * FROM days_memo WHERE set_id = #{setId}
+</select>
+</mapper>
+

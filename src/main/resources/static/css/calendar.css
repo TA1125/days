@@ -1,0 +1,34 @@
+/* メモ表示用のスタイル */
+#memoDetails {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none; /* 初期状態で非表示 */
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+/* カレンダーのスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #f2f2f2;
+}
+.today {
+  background-color: #ffeb3b;
+}
+.checkmark {
+  color: green;
+  font-size: 16px;
+  margin-left: 5px;
+}
